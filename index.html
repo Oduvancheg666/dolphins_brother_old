@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <title>Dolphin Brother</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&amp;display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="logo_2.png">
+    <script src=script.js> </script>
+  </head>
+
+  <body>
+    <div>
+   <form onclick="var randIndex = Math.floor(Math.random() * phrases.length);
+      document.getElementById('play').onclick = function() {
+      document.getElementById('text').textContent = (phrases[randIndex]);
+      this.disabled=true;
+      this.style.backgroundColor = 'gray';
+      this.style.color = 'black';
+      document.getElementById('plus').disabled=false;
+      document.getElementById('minus').disabled=false;
+      };
+      document.getElementById('plus').onclick = function() {
+      num++;
+      elem.innerHTML = num;
+      document.getElementById('text').textContent = (phrases[randIndex]);
+      };
+      document.getElementById('minus').onclick = function() {
+      num--;
+      elem.innerHTML = num;
+      document.getElementById('text').textContent = (phrases[randIndex]);
+      };
+   
+       ">
+    
+    
+   
+    <input type="text" name="time" id="time">
+    <input type="button" value ="1min" id="min" onclick = "document.getElementById('time').value='60';
+      this.style.backgroundColor = 'gray';
+      this.style.boxShadow = '0 -0px gray';
+      this.style.color = 'black';
+      document.getElementById('play').disabled=false;
+      this.disabled=true;
+      getElementById('onehalf').disabled=true;
+      
+      "/>
+    <input type="button" id="onehalf" value ="1.5min" onclick = "document.getElementById('time').value='90';
+      this.style.backgroundColor = 'gray';
+      this.style.boxShadow = '0 -0px gray';
+      this.style.color = 'black';
+      document.getElementById('play').disabled=false;
+      this.disabled=true;
+      getElementById('min').disabled=true;
+
+      "/>
+    <input type="submit" id="Reset" value="Reset">
+    <input id="minus" type="button" value="-" disabled=true>
+    <input id="plus" type="button" value="+" disabled=true>
+    <input type="button" id="play" value="Play" disabled=true />
+    <div id="timer">:</div>
+    <div id="text"></div> 
+    <div id="total"></div>
+    </form>
+    </div>
+
+    
+    <script>
+      var timerInput = document.getElementById("time");
+      var buttonRun = document.getElementById("play");
+      var timerShow = document.getElementById("timer");
+      var pluss = document.getElementById("plus");
+      buttonRun.addEventListener('click', function() {
+           timeMinut = parseInt(timerInput.value)
+      })
+      
+      timer = setInterval(function () {
+      seconds = timeMinut%60
+      minutes = timeMinut/60%60
+   
+      if (timeMinut <= 0) {
+          clearInterval(timer);
+          alert("Время закончилось");
+          pluss.disabled=true;
+         
+      } else {
+          let strTimer = `${Math.trunc(minutes)}:${seconds}`;
+          timerShow.innerHTML = strTimer;
+          
+      }
+      --timeMinut;
+  }, 1000)
+      var elem = document.getElementById('total'), num = +elem.innerHTML;
+      function addNum() {
+        num++;
+      elem.innerHTML = num;};
+
+
+
+
+
+    </script>
+   
+    
+  </body>
+</html>

@@ -1,0 +1,196 @@
+html {
+   -webkit-text-size-adjust : 100%;
+   text-size-adjust         : 100%
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+    overflow: hidden;
+}
+
+input, button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+body {
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: fixed;
+}
+#minus {
+    height: 150px;
+    width: 185px;
+    top: 440px;
+    left: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font: 66px Trebuchet MS, Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    background: rgb(64,199,129);
+    box-shadow: 1px -3px rgb(0,0,0) inset;
+   
+}
+
+#plus {
+    height: 150px;
+    width: 185px;
+    top: 440px;
+    left: 290px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    font: 66px Trebuchet MS, Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    background: rgb(64,199,129);
+    box-shadow: 1px -3px rgb(0,0,0) inset;
+   
+}
+
+
+
+
+#play {
+    height: 150px;
+    width: 375px;
+    top: 260px;
+    left: 100px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: fixed;
+    font: 66px Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background: rgb(64,199,129);
+    box-shadow: 1px -3px rgb(0,0,0) inset;
+   
+}
+
+#text{
+    margin-top: 5%;
+    vertical-align: middle;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+
+}
+#timer{
+    margin-top: 70%;
+    vertical-align: middle;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+
+}
+#time {
+    height: 150px;
+    width: 375px;
+    top: 15%;
+    left: 80%;
+    margin-left: -265px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: rgb(230, 225, 225, 0.85);
+    font: 150px Trebuchet MS, Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .5);
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+#total{
+    margin-top: 20%;
+    vertical-align: middle;
+    font-size: 80px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: black;
+}
+#min {
+        height: 150px;
+        width: 185px;
+        top: 260px;
+        left: 515px;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        background: rgb(64,199,129);
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+        text-align: center;
+}
+#onehalf {
+        height: 150px;
+        width: 185px;
+        top: 260px;
+        left: 705px;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 40px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        background: rgb(64,199,129);
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+}
+
+#Reset {
+        height: 150px;
+        width: 375px;
+        top: 440px;
+        left: 515px;
+        margin-top: 1px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        position: absolute;
+        font: 60px Trebuchet MS, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        background: rgb(236, 63, 63);
+        box-shadow: 1px -3px rgb(0,0,0) inset;
+        transition: 0.2s;
+     
+        
+}
+
